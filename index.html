@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bitcoin Cafe | Paharganj, New Delhi</title>
+  <meta name="description"
+        content="Bitcoin Cafe - Momos, Burgers, Rolls, Chinese, Fast Food and Beverages in Paharganj, New Delhi.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+
+      <a href="#home" class="logo">
+        <span class="logo-symbol">₿</span>
+        <span>
+          <strong>BITCOIN</strong>
+          <small>CAFE</small>
+        </span>
+      </a>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-order"
+         href="tel:+919217039700">
+        Call Now
+      </a>
+
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span></span>
+          PAHARGANJ • NEW DELHI
+        </div>
+
+        <h1>
+          Good Food.<br>
+          <em>Good Vibes.</em>
+        </h1>
+
+        <p>
+          From loaded momos and juicy burgers to spicy rolls,
+          Chinese favourites and refreshing drinks.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#menu" class="btn btn-primary">
+            Explore Menu
+            <span>→</span>
+          </a>
+
+          <a href="tel:+919217039700" class="btn btn-outline">
+            Call Cafe
+          </a>
+
+        </div>
+
+        <div class="hero-info">
+
+          <div>
+            <strong>24/7</strong>
+            <span>Open</span>
+          </div>
+
+          <div>
+            <strong>4.0★</strong>
+            <span>Customer Rating</span>
+          </div>
+
+          <div>
+            <strong>₹100</strong>
+            <span>Approx. Order</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURE STRIP -->
+    <section class="features">
+
+      <div class="feature">
+        <span class="feature-icon">🥟</span>
+        <div>
+          <strong>Fresh Momos</strong>
+          <small>Steamed • Fried • Kurkure</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="feature-icon">🍔</span>
+        <div>
+          <strong>Loaded Burgers</strong>
+          <small>Veg & Chicken</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="feature-icon">🌯</span>
+        <div>
+          <strong>Rolls & Wraps</strong>
+          <small>Freshly prepared</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="feature-icon">🥤</span>
+        <div>
+          <strong>Cool Drinks</strong>
+          <small>Shakes & Mojitos</small>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="section-label">OUR MENU</span>
+
+          <h2>
+            Something for<br>
+            <em>every craving.</em>
+          </h2>
+        </div>
+
+        <p>
+          Explore our favourites, from comforting
+          breakfast plates to loaded momos and
+          refreshing drinks.
+        </p>
+
+      </div>
+
+
+      <!-- SEARCH -->
+      <div class="menu-tools">
+
+        <div class="search-box">
+          <span>⌕</span>
+          <input
+            type="text"
+            id="menuSearch"
+            placeholder="Search dishes..."
+          >
+        </div>
+
+      </div>
+
+
+      <!-- CATEGORIES -->
+      <div class="categories" id="categories">
+
+        <button class="category active" data-category="all">
+          All
+        </button>
+
+        <button class="category" data-category="momos">
+          🥟 Momos
+        </button>
+
+        <button class="category" data-category="burgers">
+          🍔 Burgers
+        </button>
+
+        <button class="category" data-category="rolls">
+          🌯 Rolls
+        </button>
+
+        <button class="category" data-category="chinese">
+          🍜 Chinese
+        </button>
+
+        <button class="category" data-category="pizza">
+          🍕 Pizza & Pasta
+        </button>
+
+        <button class="category" data-category="snacks">
+          🍟 Snacks
+        </button>
+
+        <button class="category" data-category="drinks">
+          🥤 Drinks
+        </button>
+
+      </div>
+
+
+      <!-- MENU GRID -->
+      <div class="menu-grid" id="menuGrid"></div>
+
+      <div class="no-results" id="noResults">
+        No dishes found.
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+      <div class="about-image">
+
+        <div class="image-card">
+          <span>BITCOIN</span>
+          <strong>CAFE</strong>
+        </div>
+
+      </div>
+
+      <div class="about-content">
+
+        <span class="section-label">
+          ABOUT BITCOIN CAFE
+        </span>
+
+        <h2>
+          Your neighbourhood<br>
+          <em>food stop.</em>
+        </h2>
+
+        <p>
+          Located near Chuna Mandi in Paharganj,
+          Bitcoin Cafe serves a wide variety of
+          comfort food and quick bites.
+        </p>
+
+        <p>
+          From steamed momos and crispy snacks
+          to burgers, rolls, noodles, rice dishes,
+          shakes and refreshing mocktails —
+          there is something for every mood.
+        </p>
+
+        <div class="about-points">
+
+          <div>
+            <span>✓</span>
+            Wide variety of dishes
+          </div>
+
+          <div>
+            <span>✓</span>
+            Delivery available
+          </div>
+
+          <div>
+            <span>✓</span>
+            Open 24 hours
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- POPULAR -->
+    <section class="popular">
+
+      <div class="section-heading centered">
+
+        <span class="section-label">
+          CUSTOMER FAVOURITES
+        </span>
+
+        <h2>
+          Popular <em>picks.</em>
+        </h2>
+
+        <p>
+          A few things you might want to try first.
+        </p>
+
+      </div>
+
+
+      <div class="popular-grid">
+
+        <article class="popular-card">
+
+          <div class="popular-icon">🥟</div>
+
+          <div>
+            <span>MOMOS</span>
+            <h3>Veg Kurkure Momos</h3>
+            <p>Extra crispy and packed with flavour.</p>
+          </div>
+
+        </article>
+
+
+        <article class="popular-card">
+
+          <div class="popular-icon">🍔</div>
+
+          <div>
+            <span>BURGER</span>
+            <h3>Crispy Chicken Burger</h3>
+            <p>Crispy chicken with fresh toppings.</p>
+          </div>
+
+        </article>
+
+
+        <article class="popular-card">
+
+          <div class="popular-icon">🌶️</div>
+
+          <div>
+            <span>STARTER</span>
+            <h3>Chilli Paneer</h3>
+            <p>Paneer tossed in spicy Indo-Chinese sauce.</p>
+          </div>
+
+        </article>
+
+
+        <article class="popular-card">
+
+          <div class="popular-icon">🥤</div>
+
+          <div>
+            <span>DRINK</span>
+            <h3>Kitkat Shake</h3>
+            <p>A creamy shake for your sweet craving.</p>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+      <div>
+
+        <span class="section-label">
+          HUNGRY YET?
+        </span>
+
+        <h2>
+          Let's get<br>
+          <em>something delicious.</em>
+        </h2>
+
+        <p>
+          Call Bitcoin Cafe for orders and enquiries.
+        </p>
+
+      </div>
+
+      <div class="cta-buttons">
+
+        <a href="tel:+919217039700" class="btn btn-primary">
+          📞 Call Now
+        </a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Bitcoin+Cafe+2259+Rajguru+Marg+Paharganj+Delhi"
+          target="_blank"
+          class="btn btn-outline"
+        >
+          📍 Get Directions
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+      <div class="contact-heading">
+
+        <span class="section-label">
+          FIND US
+        </span>
+
+        <h2>
+          Come say <em>hello.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+
+          <span class="contact-icon">📍</span>
+
+          <div>
+            <small>ADDRESS</small>
+
+            <p>
+              2259, Rajguru Marg,<br>
+              Chuna Mandi, Paharganj,<br>
+              New Delhi, Delhi 110055
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <span class="contact-icon">📞</span>
+
+          <div>
+            <small>PHONE</small>
+
+            <a href="tel:+919217039700">
+              +91 92170 39700
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <span class="contact-icon">🕐</span>
+
+          <div>
+            <small>OPENING HOURS</small>
+
+            <p>
+              Open 24 Hours
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a href="#home" class="logo">
+          <span class="logo-symbol">₿</span>
+
+          <span>
+            <strong>BITCOIN</strong>
+            <small>CAFE</small>
+          </span>
+        </a>
+
+        <p>
+          Good food. Good vibes.<br>
+          Paharganj, New Delhi.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <div>
+          <span>EXPLORE</span>
+
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+
+        <div>
+          <span>CONTACT</span>
+
+          <a href="tel:+919217039700">
+            +91 92170 39700
+          </a>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Bitcoin+Cafe+2259+Rajguru+Marg+Paharganj+Delhi"
+            target="_blank"
+          >
+            Get Directions
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Bitcoin Cafe. All rights reserved.
+      </span>
+
+      <span>
+        Made with <b>♥</b> in Delhi
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
